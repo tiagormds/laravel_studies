@@ -14,6 +14,14 @@ class MainController extends Controller
             'name'=>'Tiago Rafael',
             'telefone'=>'82999374434',
         ];
-        return view('admin.newPage3', compact('data'));
+
+        return view('admin.newPage3', compact('data', 'value'));
+    }
+
+    public function home()
+    {
+        $value = 200;
+
+        return view('home', compact('value'));
     }
 }
