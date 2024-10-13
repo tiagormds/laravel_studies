@@ -1,4 +1,8 @@
 @extends('layouts.main_layout')
 @section('content')
-    <p class="display-1 text-center">Hello World</p>
+    {{-- Comentário de blade --}}
+
+    @if($value == 100)
+        <h1>Primeira parte do código!</h1>
+    @endif
 @endsection

@@ -1,4 +1,4 @@
 @extends('layouts.main_layout')
 @section('content')
-    <p class="display-1 text-center">ADMIN</p>
+    <h1>{{ $data['name'] }} {{ $data['telefone'] }}</h1>
 @endsection

@@ -7,3 +7,4 @@ Route::get('/', function () {
 });
 
 Route::get('/', [\App\Http\Controllers\MainController::class, 'showView']);
+Route::get('/home', [\App\Http\Controllers\MainController::class, 'home']);

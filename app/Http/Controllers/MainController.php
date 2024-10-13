@@ -9,6 +9,19 @@ class MainController extends Controller
 {
     public function showView(): View
     {
-        return view('admin.newPage3');
+        //método 1
+        $data = [
+            'name'=>'Tiago Rafael',
+            'telefone'=>'82999374434',
+        ];
+
+        return view('admin.newPage3', compact('data', 'value'));
+    }
+
+    public function home()
+    {
+        $value = 200;
+
+        return view('home', compact('value'));
     }
 }
