@@ -15,13 +15,18 @@ class MainController extends Controller
             'telefone'=>'82999374434',
         ];
 
-        return view('admin.newPage3', compact('data', 'value'));
+        return view('admin.newPage3', compact('data'));
     }
 
     public function home()
     {
-        $value = 200;
+        $datas = [
+            'value' => 5,
+            'cities' => ['New York', 'California', 'Chicago'],
+            'names' => ['a', 'b', 'c', 'd', 'e', 'f'],
+            'indice' => 1,
+        ];
 
-        return view('home', compact('value'));
+        return view('home', $datas);
     }
 }
