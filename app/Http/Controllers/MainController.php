@@ -29,4 +29,14 @@ class MainController extends Controller
 
         return view('home', $datas);
     }
+
+    public function login()
+    {
+        return view('admin.newPage3');
+    }
+
+    public function submitForm(): void
+    {
+        echo "Form submitted";
+    }
 }
